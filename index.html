@@ -1,89 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Peter Van Den Berg</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background-color: #f7f6f4;
-      color: #111;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    img {
-      max-width: 300px;
-      height: auto;
-      margin-bottom: 40px;
-    }
-
-    h1 {
-      font-size: 2rem;
-      text-transform: uppercase;
-      letter-spacing: 6px;
-      position: relative;
-      animation: fadeInSlideUp 1.5s ease-out forwards;
-      opacity: 0;
-    }
-
-    @keyframes fadeInSlideUp {
-      0% {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .underline {
-      display: inline-block;
-      position: relative;
-    }
-
-    .underline::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background: #111;
-      bottom: -5px;
-      left: 0;
-      animation: underlineGrow 1.5s ease-out forwards;
-    }
-
-    @keyframes underlineGrow {
-      from {
-        width: 0%;
-      }
-      to {
-        width: 100%;
-      }
-    }
-  </style>
-</head>
+<style>
+body {
+    background: lightgreen;
+    font-family: Verdana;
+}  
+#content {
+    background: lightyellow;
+    min-width: 200px;
+    max-width: 500px;
+    padding: 50px;
+    margin: auto;
+    margin-top: -50px;
+    line-height: 150%;
+}
+h1 {
+    letter-spacing: 2px;
+    font-size: 16px;
+    text-align: center;
+}
+h2 {
+    font-size: 14px;
+    text-align: center;
+}
+h3 {
+    font-size: 12px;
+}
+</style>
+</head>    
 <body>
+    <div id="content">
+        <h1>Peter Van Den Berg</h1>
+        <h2>Senior in Greenville, South Carolina</h2>
+        
+        <p>I am a senior at Bob Jones University studying Communications with a concentration in Marketing. I enjoy content creation, running, and entrepreneurship.</p>
+        
+        <p>
+            My favorite website is  
+            <a href="https://www.experiencerhodeisland.org/">here</a>, and you can email me  
+            <a href="mailto:petervdb@bju.edu">here</a>.
+        </p> 
+        
+        <p>
+            I enjoy working on creative media projects and connecting with local communities.
+        </p>
 
-  <!-- Logo Image -->
-  <img src="Peter Van Den bErg.png" alt="Peter Van Den Berg Logo" />
+        <h3>EDUCATION</h3>
+        Communications – Marketing<br />
+        Bob Jones University<br /><br />
 
-  <!-- Animated Name Heading -->
-  <h1><span class="underline">Peter Van Den Berg</span></h1>
-
+        Example image:<br />
+        <img src="https://cs.bju.edu/media/bju-math-division/bju-computer-science/site-assets/images/cs-logo-main.png" />
+    </div>
 </body>
 </html>
